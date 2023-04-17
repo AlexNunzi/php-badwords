@@ -2,7 +2,7 @@
 $paragraph = $_GET['paragraph'];
 $keyword = $_GET['keyword'];
 
-$censoredParagraph = str_replace(trim($keyword), "***", $paragraph);
+$censoredParagraph = str_ireplace(trim($keyword), "***", $paragraph);
 
 ?>
 
